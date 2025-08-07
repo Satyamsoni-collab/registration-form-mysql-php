@@ -1,5 +1,4 @@
 <?php
-echo "Form reached!";
 
 // Step 1: Connect to MySQL
 $servername = "localhost";
@@ -17,6 +16,7 @@ if ($conn->connect_error) {
 
 // Step 2: Get data from form if submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  echo "Form reached!";
   $firstName = isset($_POST['firstName']) ? htmlspecialchars($_POST['firstName']) : '';
   $lastName = isset($_POST['lastName']) ? htmlspecialchars($_POST['lastName']) : '';
   $gender = isset($_POST['gender']) ? htmlspecialchars($_POST['gender']) : '';
