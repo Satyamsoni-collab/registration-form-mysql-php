@@ -3,7 +3,7 @@
 // Step 1: Connect to MySQL
 $servername = "localhost";
 $username = "root";
-$password = "Satyam#9235";
+$password = "##########";
 $database = "registration_db";
 
 // Create connection
